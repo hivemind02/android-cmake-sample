@@ -3,6 +3,7 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
+    defaultPublishConfig "debug"
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 23
@@ -13,6 +14,7 @@ android {
     }
     buildTypes {
         debug {
+            debuggable true
             jniDebuggable true
         }
     }
